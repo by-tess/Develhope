@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+	<style>
+		label {
+			display: block
+		}
+	</style>
+</head>
+
+<body>
+
+    <form action="/Form.html">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br /><br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br /><br />
+        <label for="name">Nome e Cognome:</label>
+        <input type="text" id="name" name="name"><br /><br />
+        <label for="birthdate">Data di nascita:</label>
+        <input type="date" id="birthdate" name="birthdate"><br /><br />
+        <label for="phone">Numero di telefono:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br /><br />
+        <label for="abbonamento">Scegli un piano di abbonamento:</label>
+        <select id="abbonamento">
+            <option value="volvo">Free</option>
+            <option value="saab">Starter - € 4,99</option>
+            <option value="vw">Premium - € 9,99</option>
+            <option value="audi" selected>Unlimited - € 14,99</option>
+        </select><br /><br />
+        <label for="vantaggi">Vantaggi PRO:</label>
+        <input type="checkbox" id="vantaggi" name="vantaggi" value="PRO"><br /><br />
+        <label for="ccn">Numero di carta di credito:</label>
+        <input type="tel" id="ccn" name="ccn" pattern="[0-9]{16}" placeholder="xxxxxxxxxxxxxxxx"><br /><br />
+        <label for="cvc">CVC:</label>
+        <input type="tel" id="cvc" name="cvc" pattern="[0-9]{3}" placeholder="xxx"><br /><br />
+        <label for="scadenza">Scadenza:</label>
+        <input type="tel" id="scadenza" name="scadenza" pattern="[0-9]{2}/[0-9]{2}" placeholder="mm/aa"><br /><br />
+        <label for="via">Via:</label>
+        <input type="text" id="via" name="via"><br /><br />   
+        <label for="cap">CAP:</label>
+        <input type="tel" id="cap" name="cap" pattern="[0-9]{5}" placeholder="xxxxx"><br /><br />   
+        <label for="provincia">Provincia:</label>
+        <input type="text" id="provincia" name="provincia"><br /><br />  
+        <label for="localita">Località:</label>
+        <input type="text" id="localita" name="localita"><br /><br />
+        <label for="paese">Paese:</label>
+        <input type="text" id="paese" name="paese" placeholder="Italia"><br /><br />
+        <input type="submit" value="Submit">
+      </form>
+
+</body>
+
+</html>
