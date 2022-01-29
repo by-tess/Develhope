@@ -1,0 +1,14 @@
+body {
+    --page-background-color: #011212;
+    background-color: var(--page-background-color);
+}
+
+.ball {
+    --object-size: 100px;
+    --object-border-radius: 50px;
+    --object-background-color: #ff8800;
+    width: var(--object-size);
+    height: var(--object-size);
+    background-color: var(--object-background-color);
+    border-radius: var(--object-border-radius);
+}
