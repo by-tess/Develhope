@@ -1,0 +1,52 @@
+header {
+    width: 800px;
+    height: 100px; 
+    box-sizing: border-box;
+}
+
+aside {
+    width: 200px;
+    height: 100%; 
+}
+
+aside img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+aside ul {
+    margin-bottom: 100px;
+}
+
+aside p {
+    text-align: center;
+}
+
+aside a {
+    color: #2b2b2b;
+    transition: 0.3s;
+}
+
+aside a:hover {
+    color: #2b2bb2;
+}
+
+article {
+    width: 500px;
+    height: 300px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
+header, aside, article {
+    border: 5px solid #000000;
+}
+
+header, main {
+    margin: 20px auto;
+}
