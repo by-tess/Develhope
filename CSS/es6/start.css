@@ -1,0 +1,47 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#yellow {
+    grid-column: 1 / span 4;
+    order: 1;
+}
+
+#blue {
+    grid-column: 1 / 1;
+    order: 2;
+    grid-row-end: span 3;
+}
+
+#orange {
+    grid-column: 2 / span 4;
+    order: 3;
+}
+
+#red {
+    grid-column: 2 / span 4;
+    order: 4;
+}
+
+#green {
+    grid-column: 2 / span 4;
+    order: 5;
+}
+
+#yellow ul {
+    display: flex;
+}
+
+#yellow ul li, #red ul li {
+    width: 100px;
+}
+
+#yellow ul li:first-child {
+    width: 300px;
+}
+
+#red ul {
+    display: flex;
+    flex-direction: row-reverse;
+}
