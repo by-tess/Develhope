@@ -1,0 +1,35 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#green {
+    order: 1;
+    grid-column: 1 / span 3;
+}
+
+#yellow {
+    order: 2;
+    grid-column: 1 / auto;
+}
+
+#red {
+    order: 3;
+    grid-column: 2 / auto;
+}
+
+#blue {
+    order: 4;
+    grid-column: 3 / auto;
+    grid-row-end: span 2;
+}
+
+#orange {
+    order: 5;
+    grid-column: 1 / span 2;
+}
+
+#yellow ul, #red ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
