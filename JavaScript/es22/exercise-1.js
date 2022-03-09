@@ -7,7 +7,7 @@ const person = {
     return person.firstName;
   },
   info: function() {
-    return person.firstName + ', ' + person.lastName + ', ' + person.age + ', ' + person.job;
+    return person.firstName + ' ' + person.lastName + ', ' + person.age + ' - ' + person.job;
   }
 }
 
