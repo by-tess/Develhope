@@ -1,8 +1,10 @@
 function nicknameMap(persons) {
   let result = []
-  for (let i = 0; i < persons.length; i++) {
-    result.push(persons[i].name + '-' + persons[i].age);
-  }
+  
+  persons.forEach(element => {
+    result.push(element.name + '-' + element.age);
+  });
+  
   return result;
 }
 
