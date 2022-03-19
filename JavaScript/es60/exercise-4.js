@@ -52,7 +52,7 @@ function fetchJobById(id)  {
       setTimeout(() => {
           const jobId = jobs.find((job) => job.id === id)
           if (jobId) {
-             return resolve(jobId) 
+             return resolve(jobId.jobTitle) 
           } 
           return reject(`The job with id number ${id} does not exist`)
       }, 1000);
