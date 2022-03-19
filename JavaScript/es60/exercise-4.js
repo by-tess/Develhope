@@ -42,7 +42,7 @@ function fetchPersonById(id) {
           if (personId) {
              return resolve(personId) 
           } 
-          return reject(`Person with id: ${id} doesn't exist`)
+          return reject(`The person with id number ${id} does not exist`)
       }, 1000);
   })
 }
