@@ -8,8 +8,13 @@
   // code here
   window.onload = async () => {
   
+<<<<<<< HEAD
     const response = await fetch ("https://jsonplaceholder.typicode.com/todos/4");
     const todo = await response.json();
+=======
+  const response = await fetch ("https://jsonplaceholder.typicode.com/todos/4");
+  const todo = await response.json();
+>>>>>>> js-exercises
 
     const title = document.createElement("h2");
     title.innerText = todo.title;
@@ -18,9 +23,17 @@
     input.type = "checkbox";
     input.checked = todo.completed;
 
+<<<<<<< HEAD
     const container = document.getElementById("container");
     container.appendChild(title);
     container.appendChild(input);
 
   }
+=======
+  const container = document.getElementById("container");
+  container.appendChild(title);
+  container.appendChild(input);
+
+}
+>>>>>>> js-exercises
 </script>
